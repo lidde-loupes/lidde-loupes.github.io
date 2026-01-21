@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DigiLoupes - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Go to Home">
+          <span class="dot"></span> <span>DigiLoupes</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="master-plan.html">Master Plan</a>
+          <a href="updates.html">Weekly Updates</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="overlay">
+          <h1>Loupes Built for Today's Medical Professionals</h1>
+          <p>
+            With DigiLoupes, professionals gain comfort, clarity, and control -
+            so they can perform longer, see sharper, and easily communicate with
+            their team.
+          </p>
+          <p>
+            Ultimately, DigiLoupes help professionals perform at their best -
+            for themselves, their teams, and their patients.
+          </p>
+          <a href="master-plan.html" class="cta">
+            Learn Why We Are Rethinking Medical Vision
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p style="margin: 0">
+        Researched, Designed, and Built in Canada
+        <span style="color: #e63946; font-size: 1.2em">&#127809;</span>
+      </p>
+    </footer>
+
+    <script>
+      // Active tab highlight
+      for (const a of document.querySelectorAll(".nav a")) {
+        if (location.pathname.endsWith(a.getAttribute("href"))) {
+          a.classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>
